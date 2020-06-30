@@ -1,0 +1,220 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+p {
+  color: dimgray;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-image: url(/images/top-banner.png);
+  background-repeat: no-repeat;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  padding: 60px 0;
+}
+
+header .box-left {
+  padding: 30px 0;
+}
+
+header .box-left h1 {
+  font-size: 46px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+header .box-left h1 span {
+  color: orange;
+  font-weight: normal;
+  font-size: 46px;
+}
+
+header .box-left .sub-head {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+header .box-left p {
+  padding-bottom: 15px;
+}
+
+header .box-left .cta-btn {
+  padding: 10px 30px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(45deg, lightsalmon, tomato);
+  outline: none;
+  border: none;
+}
+
+header .box-right img {
+  width: 100%;
+}
+
+.about-me {
+  background-image: url(/images/dream-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.about-me .box-left img {
+  width: auto;
+  height: 500px;
+}
+
+.about-me .box-right {
+  width: 60%;
+  padding: 60px 0;
+  padding-left: 30px;
+}
+
+.about-me .box-right h2 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+
+.about-me .box-right .sub-head {
+  padding: 5px 0;
+}
+
+.about-me .box-right p {
+  padding-bottom: 20px;
+}
+
+.about-me .box-right .download-btn {
+  padding: 8px 30px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(45deg, lightsalmon, tomato);
+  outline: none;
+  border: none;
+}
+
+.experience {
+  background-image: url(/images/exp-bg.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 60px 0;
+}
+
+.experience .heading {
+  font-size: 36px;
+  padding: 15px 5px;
+}
+
+.experience .exp-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.experience .exp-box {
+  padding: 30px 30px;
+  margin: 15px;
+  width: 50%;
+  -webkit-box-shadow: 1px 6px 12px rgba(36, 36, 36, 0.3);
+          box-shadow: 1px 6px 12px rgba(36, 36, 36, 0.3);
+}
+
+.experience .exp-box h2 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+
+.experience .exp-box .sub-heading {
+  color: orange;
+  padding: 5px 0;
+}
+
+.experience .exp-left {
+  border-left: 5px solid;
+  -o-border-image: linear-gradient(180deg, lightsalmon, tomato);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(lightsalmon), to(tomato));
+     border-image: linear-gradient(180deg, lightsalmon, tomato);
+  border-image-slice: 1;
+}
+
+.experience .exp-right {
+  border-left: 5px solid;
+  -o-border-image: linear-gradient(180deg, blue, cyan);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(cyan));
+     border-image: linear-gradient(180deg, blue, cyan);
+  border-image-slice: 1;
+}
+
+footer p {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .box-right img {
+    width: 300px;
+  }
+  .about-me .box-left img {
+    width: 300px;
+    height: auto;
+  }
+  .about-me .box-right {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .exp-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .experience .exp-box {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .box-left h1 {
+    font-size: 38px;
+  }
+  header .box-left h1 span {
+    font-size: 38px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
